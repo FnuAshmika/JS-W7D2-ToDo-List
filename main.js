@@ -29,11 +29,11 @@ const todoList = [
   const todoContainer = document.getElementById("list")
   for (const task of todoList ){
     todoContainer.innerHTML += `
-    <li class="card" id=${task.id}>
+    <div class="card" id=${task.id}>
     <h3>${task.title}</h3>
     <p>${task.description}</p>   
     <button class="btn btn-primary done-button">&#10004;</button>
-</li>
+</div>
 
     `
   }
